@@ -53,6 +53,9 @@ def get_winner(user_choice, computer_choice):
 
     return winner
 
+Wins = 0
+Losses = 0
+
 while(True):
     print("Choose rock, paper or scissors by entering the apropriate number.")
     print("Rock = 1")
@@ -82,16 +85,20 @@ while(True):
     print()
 
 
-    winner = get_winner(user_choice, computer_choice)
 
+    winner = get_winner(user_choice, computer_choice)
     if(winner == "user"):
         print("You win!")
+        Wins += 1
+        print(f"You: {Wins}, Losses: {Losses}")
     elif(winner == "computer"):
         print("You lose!")
+        Losses += 1
+        print(f"You: {Wins}, Losses: {Losses}")
     else:
         print("The game was a draw! Choose again!")
         continue
-
+    
     print()
     print()
 
