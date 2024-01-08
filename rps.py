@@ -6,6 +6,13 @@ Scissors beats paper
 Rock = 1
 Paper = 2
 Scissors = 3
+
+Update the rock-paper-scissors program by adding two new choices of your choosing. 
+For instance, you can make rock-paper-scissors-lizard-Spock (instructions here: https://www.wikihow.com/Play-Rock-Paper-Scissors-Lizard-Spock).
+ Or, you can make up your own.
+
+In addition, add a running count of wins and losses that displays after the completion of each round of the game.
+ To do this, define two new variables: (1) wins and (2) losses. If the player wins, add 1 to wins. If the player loses, add 1 to losses.
 '''
 import random
 
