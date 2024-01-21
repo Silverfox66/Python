@@ -26,7 +26,7 @@ charByIndex = list(indexByChar.keys())
 
 offset = 3
 
-message = "Yo wassup"
+message = "Hello World!"
 
 ciphertext = encrypt(message, offset, indexByChar, charByIndex)
 
