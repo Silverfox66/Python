@@ -1,3 +1,6 @@
+#Crypto
+
+#What is up
 def encrypt(plaintext, offset, indexByChar, charByIndex):
     ciphertext = plaintext
 
