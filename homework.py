@@ -1,3 +1,3 @@
-n = 3
-sum = (n-4+n)*5/2
+n = int(input("Plz give me a positive integer so I can calculate the traiangular number: "))
+sum = n*(n+1)/2
 print(sum)
