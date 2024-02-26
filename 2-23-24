@@ -42,6 +42,6 @@ def exponent_func(base, exp):
 # print("average:", average)
 
 base = int(input("Please type in your base number: "))
-exponent = int(input("Please type in your exponent "))
+exponent = int(input("Please type in your exponent: "))
 result = base ** exponent
 print(result)
