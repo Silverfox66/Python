@@ -9,7 +9,7 @@ def problem2(n):
     else:
         return False
 def problem3(n):
-    if n > 3 > 5 > 15:
+    if n > 15:
         return True
     else:
         return False

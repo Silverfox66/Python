@@ -24,3 +24,5 @@ f = True
 x = ((a or b) and (f and not(c))) or ((d or c) or (e or not(f)))
 
 n = input("Please enter a number 1-5: ")
+
+print(x)
