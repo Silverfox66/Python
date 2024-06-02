@@ -35,12 +35,22 @@ class Deck:
 
     def popCard(self):
         return self.cards.pop()
+    
+    def getSplitDeck(self):
+        cards1 = self.cards[0:int(len(self.cards) / 2)]
+        cards2 = self.cards[int(len(self.cards) / 2):]
+
+        deck1 = Deck(cards1)
+        deck2 = Deck(cards2)
+
+        return (deck1, deck2)
 
 
 class Player:
     def __init__(self, name, deck,):
         self.name = name
         self.deck = deck
+        self.stash = Deck(list())
         self.num_wins = 0
 
     def setName(self, name):
@@ -52,6 +62,14 @@ class Player:
         self.deck = deck
     def getDeck(self):
         return self.deck
+    
+    def setStash(self, stash):
+        self.stash = stash
+    def getStash(self):
+        return self.stash
+    
+    def addToStash(self,card):
+        self.stash.addCard(card)
     
     def getNumWins(self):
         return self.num_wins
@@ -96,6 +114,54 @@ def initializeDeck():
 def initializePlayers(game_deck):
     player1_name = input("Enter Player 1's name: ")
     player2_name = input("Enter Player 2's name: ")
+
+
+    (player1_deck, player2_deck) = game_deck.getSplitDeck()
+
+    player1 = Player(player1_name, player1_deck)
+    player2 = Player(player2_name, player2_deck)
+
+
+    return (player1, player2)
+
+def compareCards(card1, card2):
+    rank1 = card1.getRank()
+    rank2 = card2.getRank()
+
+    if(rank1 == 1):
+        rank1 = 14
+    if(rank2 == 1):
+        rank2 = 14
+    
+    comparison = None
+
+    if(rank1 < rank2):
+        comparison = -1
+    elif(rank1 == rank2):
+        comparison = 0
+    else:
+        comparison = 1
+    
+    return comparison
+
+
+gamedeck = initializeDeck
+players = initializePlayers(gamedeck)
+
+while(True):
+    card1 = players[0].drawCard()
+    card2 = players[1].drawCard()
+
+    comparison = compareCards(card1, card2) 
+
+    if(comparison == 1):
+        card1 + card2
+    elif(comparison == -1):
+        card1 + card2
+    else:
+        pass
+
+
 
 
 card = Card(3, "hearts")
