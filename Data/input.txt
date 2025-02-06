@@ -1,6 +1,0 @@
-dog
-cat
-dolphin
-elephant
-tiger
-monkey
