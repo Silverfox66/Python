@@ -1,3 +1,5 @@
+#Learning fibonacci sequence
+
 def fib(n, table = dict()):
     if(n <= 1):
         return 1
