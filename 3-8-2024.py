@@ -1,3 +1,6 @@
+#Compare two sets
+
+
 # def letterCount(string, char):
 #     count = 0
 #     for x in string:
