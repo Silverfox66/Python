@@ -1,3 +1,5 @@
+#Calculate the factorial of a number and the sum of a sequence of numbers according to specific formulas.
+
 def product(n):
     if n == 1:
         return 1
