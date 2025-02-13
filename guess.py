@@ -1,3 +1,4 @@
+#Create guess number 
 import random
 
 number = random.randint(1, 5)
