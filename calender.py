@@ -1,4 +1,6 @@
+#Making a calendar with python(For fun)
+
 import calendar
-yy = 2024
-mm = 12
+yy = 2025
+mm = 2
 print(calendar.month(yy, mm))
