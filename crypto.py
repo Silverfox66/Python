@@ -1,4 +1,4 @@
-#Crypto
+#Encrypting messages
 
 #What is up
 def encrypt(plaintext, offset, indexByChar, charByIndex):
