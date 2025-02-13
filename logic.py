@@ -1,3 +1,5 @@
+#Checking a number for small things
+
 def problem1(n):
     if n >= 0:
         return True
