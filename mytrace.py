@@ -1,3 +1,5 @@
+#Define a function that subtracts two numbers if the first is greater, otherwise it adds them, then uses this function to perform calculations and print the results.
+
 def my_function(x, y):
     if(x > y):
         return x - y
