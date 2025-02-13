@@ -1,3 +1,5 @@
+#Finding average of a list of numbers
+
 def get_average(numbers):
     sum = 0
     for n in numbers:
