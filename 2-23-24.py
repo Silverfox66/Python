@@ -1,3 +1,4 @@
+#Solving for exponents
 def exponent_func(base, exp):
     if(base == 0 and exp == 0):
         return "UNDEFINED"
