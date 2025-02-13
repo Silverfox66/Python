@@ -1,3 +1,5 @@
+#Define a recursive function with memoization to calculate a sequence of numbers based on the product of the three preceding numbers.
+
 def S(n, memo={1: 5, 2: 6, 3: 7}):
     if n in memo:
         return memo[n]
