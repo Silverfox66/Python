@@ -1,3 +1,5 @@
+#Seeing whether statements are true or false
+
 P = True  # 2 + 2 = 4
 Q = False # 1 + 3 = 5 (incorrect)
 R = True  # 3 + 3 = 6
